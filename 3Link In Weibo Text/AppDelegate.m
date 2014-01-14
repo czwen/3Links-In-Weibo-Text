@@ -35,7 +35,7 @@
     NSArray *linkMatches = [text scanStringForLinks];
     NSArray *usernameMatches = [text scanStringForUsernames];
     NSArray *hashtagMatches = [text scanStringForHashtags];
-    
+    NSArray *emojiMathces = [text scanStringForEmoji];
     //为链接添加属性（颜色、字体……）
     for (NSString *linkMatchedString in linkMatches) {
         NSRange range = [text rangeOfString:linkMatchedString];
@@ -80,6 +80,21 @@
                                        hashtagMatchedString, @"HashtagMatch",
                                        nil];
             [attributeString addAttributes:HashtagMatch range:range];
+        }
+    }
+    
+    for (NSString *emojiMatchedString in emojiMathces) {
+        NSRange range = [text rangeOfString:emojiMatchedString];
+        
+        if (range.location != NSNotFound) {
+            // Add custom attribute of HashtagMatch to indicate where our hashtags are found
+            NSDictionary *emojiMatch = [[NSDictionary alloc] initWithObjectsAndKeys:
+                                          [NSColor redColor], NSForegroundColorAttributeName,
+                                          [NSCursor pointingHandCursor], NSCursorAttributeName,
+                                          [NSFont fontWithName:@"Helvetica" size:18], NSFontAttributeName,
+                                          emojiMatchedString, @"EmojiMatch",
+                                          nil];
+            [attributeString addAttributes:emojiMatch range:range];
         }
     }
     

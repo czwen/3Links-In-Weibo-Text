@@ -21,4 +21,8 @@
 - (NSArray *)scanStringForHashtags {
 	return [self componentsMatchedByRegex:@"#([^\\#|.]+)#"];
 }
+
+- (NSArray *)scanStringForEmoji {
+	return [self componentsMatchedByRegex:@"\\[([^\\#|.]+)\\]"];
+}
 @end

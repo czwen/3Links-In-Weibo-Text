@@ -716,7 +716,21 @@
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                             </attributes>
                                         </fragment>
-                                        <fragment content="种链接的检测，这是">
+                                        <fragment content="种链接的检测，">
+                                            <attributes>
+                                                <color key="NSColor" name="selectedKnobColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="18" name="STHeitiSC-Light"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="[嘻嘻] ">
+                                            <attributes>
+                                                <color key="NSColor" red="0.32549019607843138" green="0.31764705882352939" blue="0.52941176470588236" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="18" name="STHeitiSC-Light"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="这是">
                                             <attributes>
                                                 <color key="NSColor" name="selectedKnobColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="18" name="STHeitiSC-Light"/>
@@ -751,10 +765,17 @@
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                             </attributes>
                                         </fragment>
-                                        <fragment content="http://czwen1993.github.io">
+                                        <fragment content="http://czwen1993.github.io ">
                                             <attributes>
                                                 <color key="NSColor" name="selectedKnobColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="18" name="HelveticaNeue"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="接下来是表情[哈哈] [嘻嘻] [偷笑]">
+                                            <attributes>
+                                                <color key="NSColor" name="selectedKnobColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="18" name="STHeitiSC-Light"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                             </attributes>
                                         </fragment>

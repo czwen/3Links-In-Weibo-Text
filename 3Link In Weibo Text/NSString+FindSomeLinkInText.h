@@ -13,4 +13,5 @@
 - (NSArray *)scanStringForLinks;
 - (NSArray *)scanStringForUsernames;
 - (NSArray *)scanStringForHashtags;
+- (NSArray *)scanStringForEmoji;
 @end
